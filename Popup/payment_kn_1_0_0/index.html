@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment_kn_1_0_0</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css">
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/icon.min.css">
+    <link rel="stylesheet" href="./sass/payment_kn_1_0_0.min.css">
+    <script src="https://huudinh.github.io/assets/js/lib.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <div class="header__logo">
+                    <img width="192" height="55" src="/media/images/logo.svg" alt="">
+                </div>
+                <div class="header__cart">
+                    <i class="icon-cart modal-btn" data-modal="modal-top"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="payment_kn_1_0_0">
+        <div class="payment_kn_1_0_0__box modal" id="modal-top">
+            <div class="modal-bg"></div>
+            <div class="modal-box animate-top">
+                <div class="modal-header">
+                    <div class="modal-close">&times;</div>
+                    <div class="modal-title">Thanh toán</div>
+                </div>
+                <div class="modal-body">
+                    <div class="payment_kn_1_0_0__paymentBox">
+                        <div class="payment_kn_1_0_0__info">
+                            <h5 class="payment_kn_1_0_0__title">Thông tin khách hàng</h5>
+                            <input type="text" name="" id="" placeholder="Họ tên*" required>
+                            <input type="text" placeholder="Số điện thoại*" required>
+                            <input type="text" placeholder="Email*" required>
+                            <input type="text" placeholder="Địa chỉ">
+                            <textarea name="" id="" cols="10" rows="5" placeholder="Ghi chú"></textarea>
+                        </div>
+                        <div class="payment_kn_1_0_0__service">
+                            <h5 class="payment_kn_1_0_0__title">Thông tin đơn hàng</h5>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tr>
+                                        <th>Sản phẩm</th>
+                                        <th>Giá</th>
+                                        <th>Số lượng</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table__service">
+                                                <div class="table__service--pic">
+                                                    <img width="540" height="514" src="images/page4-pic1.jpg" alt="">
+                                                </div>
+                                                <p>Cắt mí nối mi</p>
+                                            </div>
+                                        </td>
+                                        <td>20000000đ</td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                        <td>
+                                            <button class="table__service--btn">Xóa</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table__service">
+                                                <div class="table__service--pic">
+                                                    <img width="540" height="514" src="images/page4-pic1.jpg" alt="">
+                                                </div>
+                                                <p>Cắt mí</p>
+                                            </div>
+                                        </td>
+                                        <td>20000000đ</td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                        <td>
+                                            <button class="table__service--btn">Xóa</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table__service">
+                                                <div class="table__service--pic">
+                                                    <img width="540" height="514" src="images/page4-pic1.jpg" alt="">
+                                                </div>
+                                                <p>Cắt mí</p>
+                                            </div>
+                                        </td>
+                                        <td>20000000đ</td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                        <td>
+                                            <button class="table__service--btn">Xóa</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="modal-footer__payment">
+                                    <p>Thanh toán: <span>40000000đ</span></p>
+                                </div>
+                                <div class="modal-footer__btn">
+                                    <button class="modal-footer__btnPayment">Thanh toán</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

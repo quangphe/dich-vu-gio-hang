@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dich-vu-gio-hang</title>
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css">
+    <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/icon.min.css">
+    <link rel="stylesheet" href="/media/sass/main.min.css">
+    <link rel="stylesheet" href="../Popup/payment_kn_1_0_0/sass/payment_kn_1_0_0.min.css">
+    <script src="https://huudinh.github.io/assets/js/lib.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <div class="header__logo">
+                    <img width="192" height="55" src="/media/images/logo.svg" alt="">
+                </div>
+                <div class="header__cart" id="header__cart">
+                    <span class="header__cartNumbers" id="cartNumbers">0</span>
+                    <i class="icon-cart modal-btn" data-modal="modal-top"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        const header__cart = document.getElementById('header__cart');
+        header__cart.addEventListener('click', () => {
+            loadListCartService();
+        })
+
+    </script>
+    <section id="page3" class="screen3">
+        <div class="container">
+            <div class="screen3_box" id="listService">
+
+            </div>
+        </div>
+
+    </section>
+    <section class="payment_kn_1_0_0" id="payment_kn_1_0_0">
+        <div class="payment_kn_1_0_0__box modal" id="modal-top">
+            <div class="modal-bg"></div>
+            <div class="modal-box animate-top">
+                <div class="modal-header">
+                    <div class="modal-close">&times;</div>
+                    <div class="modal-title">Thanh toán</div>
+                </div>
+                <div class="modal-body">
+                    <div class="payment_kn_1_0_0__paymentBox">
+                        <div class="payment_kn_1_0_0__info">
+                            <h5 class="payment_kn_1_0_0__title">Thông tin khách hàng</h5>
+                            <input id="inName" type="text" value="" name="" placeholder="Họ tên*" required>
+                            <input id="inPhone" type="text" value="" placeholder="Số điện thoại*" required>
+                            <input id="inEmail" type="text" value="" placeholder="Email*" required>
+                            <input id="inAddress" type="text" value="" placeholder="Địa chỉ">
+                            <textarea id="inNote" name="" cols="10" rows="5" placeholder="Ghi chú"></textarea>
+                        </div>
+                        <div class="payment_kn_1_0_0__service">
+                            <h5 class="payment_kn_1_0_0__title">Thông tin đơn hàng</h5>
+                            <div class="table-responsive">
+                                <table class="table listCartService">
+                                    <tr>
+                                        <th>Sản phẩm</th>
+                                        <th>Giá</th>
+                                        <th>Số lượng</th>
+                                        <th></th>
+                                    </tr>
+                                    <tbody id="content">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer" id="footer__payment">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+<script src="media/js/data.js"></script>
+<script src="media/js/index.js"></script>
+
+</html>
